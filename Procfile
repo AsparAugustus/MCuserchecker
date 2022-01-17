@@ -1,1 +1,1 @@
-web: node onlinecheckuser.js
+web: run node onlinecheckuser.js
