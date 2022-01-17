@@ -1,6 +1,15 @@
-const fetch = require('node-fetch');
 const { UsersList } = require('./UsersList.js')
+const fetch = require('node-fetch');
 
+// for (var i = 0, length = UsersList.length; i < length; i++) {
+//     getUuid(UsersList[i]).then((uuid) => {
+//         console.log(uuid);
+//     });
+// }
+
+// getUuid('as23ssssd').then((uuid) => {
+//     console.log(uuid);
+// });
 
 
 var passedList = [];
@@ -33,16 +42,13 @@ async function doSomething() {
 
  
     console.log('Passed accounts: ')
-    // console.table(passedList)
+    console.table(passedList)
 
     console.log('Failed accounts: ')
-    // console.table(failedList)
+    console.table(failedList)
 
     
 }
 
 
 doSomething()
-
-exports.passedList = passedList
-exports.failedList = failedList
